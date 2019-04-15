@@ -1,0 +1,69 @@
+<header>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--Search-->
+            <div class="col-sm-3 col-md-2">
+                <div class="search">
+                    <form class="form-search"> 
+                        <div class="form-row">
+                            <div class="col-auto relative">                                    
+                                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Pesquise Aqui">
+                                <a href="" class="bt-search"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--H1-->
+            <div class="col-sm-3 col-md-3">
+                <h1>SRM</h1>
+            </div>
+
+            <!--Grupo-->
+            <div class="col-sm-4 col-md-4">
+                <div class="grupo">
+                    <form class="form-inline">
+                        <label for="Grupo">Grupo Econômico</label>
+                        <select class="form-control" id="Grupo">
+                            <option value="1" selected>Visão Agregada 1</option>
+                            <option value="2">Visão Agregada 2</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <!--Logado-->
+            <div class="col-sm-2 col-md-3">
+                <div class="box-login relative">
+                    <a href="#" class="info-user block">
+                        <i class="ico"></i>
+                        <span class="user">Sandra Oliveira</span>
+                        <i class="arrow indent">Opções</i>
+                        <div class="bell relative">
+                            <span class="count">3</span>  
+                        </div>
+                        <div class="clear"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- containner-->
+<div class="container-fluid">
+    <div class="row">
+
+        <!--SideBar-->
+        <div class="col-sm-3 col-md-2 col-xl-2 bd-sidebar">
+            <app-menu></app-menu>
+        </div>
+
+        <!-- Main -->
+        <main class="col-sm-9 col-md-10 bd-content">
+            <router-outlet></router-outlet>            
+        </main>
+    </div>
+</div>

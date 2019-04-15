@@ -1,0 +1,118 @@
+<section class="content-page page-home">
+    <!-- BreadCrumb-->
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="main-breadcrumb">
+                <li><a href="/home">Página Inicial</a></li>
+                <li><a href="/conta">Conta Digital</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="space-box row">
+        <!-- Information area-->
+        <div class="col-sm-8 area-info">
+            <h2>Conta Digital</h2>
+        </div>
+        
+        <!-- Product filter-->
+        <div class="col-sm-4 filter">
+            <div class="filter-product">
+                <form class="form-inline">
+                    <label for="Produtos">Produto</label>
+                    <select class="form-control" id="Produtos">
+                        <option value="1" selected>Todos</option>
+                        <option value="2">Outros</option>
+                    </select>
+                </form>
+            </div>
+        </div>                                       
+    </div>
+
+    <div class="row">
+        <!--Box Atalhos-->
+        <div class="col-md-7 col-sm-12 box-atalhos">
+            <div class="content">
+                <h3>Atalhos</h3>
+                <hr>
+                <div class="row">
+                    <!--Operacional-->
+                    <div class="col-sm-9">
+                        <h4>Operacional</h4>
+                        <div class="result">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button type="button" class="btn btn-outline-primary">Pendentes</button>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <button type="button" class="col-sm-6 btn btn-outline-secondary">Desativadas</button>
+                                </div>                       
+
+                                <div class="col-sm-6">
+                                    <button type="button" class="col-sm-6 btn btn-outline-warning">Nova Conta</button>
+                                </div>                                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Geral-->
+                    <div class="b-left col-sm-3">
+                        <h4>Geral</h4>
+                        <div class="result">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="col-sm-12 btn btn-outline-primary">Carteira</button>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="button" class="col-sm-12 btn btn-outline-secondary">Instruções</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+
+        <!--Box Alertas-->
+        <div class="col-md-5 col-sm-12 box-alertas">
+            <div class="content">
+                <h3 class="fl-left">Alertas</h3>
+                <span class="info fl-right">últimos 10 dias</span>
+                <div class="clear"></div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>5 Notas Canceladas</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>4 Notas Canceladas</p>                                    
+                    </div>
+                    <div class="col-sm-6">
+                        <form class="form-inline">                                                
+                            <!-- Campo Acoes -->
+                            <app-btn-acoes></app-btn-acoes>
+                        </form>
+                    </div>                                
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>9 Assinaturas Digital</p>                                    
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Campo Acoes -->
+                        <app-btn-acoes></app-btn-acoes>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+
+    </div>
+</section>
+  

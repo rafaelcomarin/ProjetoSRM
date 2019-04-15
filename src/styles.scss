@@ -1,0 +1,303 @@
+/* ---------->>> Rafael Comarin GLOBAL <<<---------- */
+body, html {font-family: 'Open Sans', sans-serif; background: #ebebeb;}
+body { overflow-y: scroll;}
+p, p a {color: #666; font-size: 14px;}
+a.underline {text-decoration: underline !important;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.indent {text-indent: -9999px;}
+.upper {text-transform: uppercase;}
+.clear {clear: both;}
+.fl-left {float: left;}
+.fl-right {float: right;}
+.m-auto {margin: 0 auto;}
+.inline {display: inline !important;}
+.block {display: block;}
+.hide {display: none;}
+.relative {position: relative;}
+.absolute {position: absolute;}
+.fixed {position: fixed;}
+.overflow-hidden {overflow: hidden;}
+.scroll {overflow: auto; width: 100%;}
+a {text-decoration: none !important; outline: none !important;}
+a.underline {text-decoration: underline !important;}
+h1,h2,h3,h4,h5,h6 {margin-top: 0; margin-bottom: 0;}
+ul, ul li, ol, ol li {list-style: none; margin: 0; padding: 0}
+input,select,textarea,input:active {outline: none !important; border-color: none;}
+label {font-weight: normal;}
+body.mobile .no-mobile {display: none !important;}
+.for-mobile {display: none !important;}
+body.mobile .for-mobile {display: block !important;}
+.form-control {border: solid 1px #9ac5e5; border-radius: 0;}
+.btn {border: 1px solid #9ac5e5; background: none; border-radius: 0;}
+
+
+/* BreadCrumb */
+ul.main-breadcrumb {
+    padding: 15px 20px;
+    list-style: none;    
+    li {
+        display: inline;
+        font-size: 14px;
+    }
+    li+li:before {
+        padding: 8px;
+        color: #666;
+        content: "\00a0>\00a0";
+    }
+    li a {
+        color: #666;
+        text-decoration: none;
+    }
+    li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+}
+
+ 
+/* Header */
+header {
+    background: #FFF; margin-top: 10px; padding: 10px 0;
+    .search {
+        margin-top: 5px;
+        .bt-search {
+            display: block;
+            width: 26px;
+            height: 26px;
+            background: url(/assets/img/sprite.jpg) -43px -47px no-repeat;
+            position: absolute;
+            top: 5px;
+            right: 3px;
+        }
+        input {
+            border: none;
+            box-shadow: none;
+        } 
+    }     
+    h1 {
+        display: block;
+        width: 168px;
+        height: 43px;
+        background: url(/assets/img/h1.jpg) no-repeat;
+        text-indent: -9999px;
+    }
+    .grupo {
+        margin-top: 5px;
+        label {
+            margin-right: 10px;
+            color: #666;
+        }
+    }
+    .box-login {
+        background: #00233d;
+        padding-left: 60px;
+        width: 260px;
+        margin-top: 5px;
+        float: right;
+        .ico {
+            display: block;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: url(/assets/img/sprite.jpg) -69px -47px no-repeat;
+            top: 8px;
+            left: 20px;
+        }
+        .user {
+            color: #FFF;
+            font-size: 13px;
+            line-height: 35px;
+            
+        }
+        .arrow {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 65px;
+            width: 14px;
+            height: 14px;
+            background: url(/assets/img/arrow.jpg) no-repeat;
+            background-size: 14px 14px;            
+        }
+        .bell {
+            display: block;
+            float: right;            
+            width: 55px;
+            height: 35px;
+            background: #4997d1 url(/assets/img/sino-peq.png) no-repeat center center;
+            .count {
+                background: red;
+                position: absolute;
+                top: 4px;
+                right: 13px;
+                border-radius: 15px;
+                padding: 2px 5px;
+                color: #FFF;
+                font-size: 9px;
+            }            
+        }
+    }    
+}
+
+/* For mobile */
+@media screen and (max-width: 749px) {
+    h1 {
+        margin: 20px auto !important;
+    }
+    .box-login {
+        margin: 20px 0 10px 0 !important;
+        width: 100% !important;            
+    }
+    .bd-sidebar {
+        min-height: auto !important;
+    }
+    .area-info {
+        margin: 0px 0px 0px 0px !important;
+    }
+    .filter-product {
+        margin: 10px 0 0 0 !important;
+    }
+    .box-atalhos {
+        margin: 20px 0 !important;
+    }
+    .space-box {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+/* min-width & max-width */
+@media screen and (min-width: 750px) and (max-width: 997px) {
+    .box-login {
+        background: none !important;
+        width: auto !important;
+        .user, .ico, .arrow {display: none !important;}    
+    }
+    .grupo {
+        text-align: center;
+    }    
+}
+
+/* Sidebar */
+.bd-sidebar {
+    background: #00233d;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    .menu li {        
+        border-bottom: 1px solid #387db0;
+        padding: 10px 15px;
+    }
+    .menu li a {
+        color: #FFF;
+        line-height: 43px;
+        display: block;
+        position: relative;
+        .ico {
+            display: block;
+            float: left;
+            width: 43px;
+            height: 43px;
+            margin-right: 5px;
+            background-image: url(/assets/img/sprite.jpg);        
+        }        
+    }   
+    .menu li a:hover::after,
+    .menu li a.active::after {
+        display: block;
+        content: '';
+        width: 13px;
+        height: 24px;
+        background: url(/assets/img/sprite.jpg) -43px -73px;
+        position: absolute;
+        top: 10px;
+        right: -15px;
+    }
+    .menu li a.home .ico {
+        background-position: 0 0;
+    }
+    .menu li a.conta-digital .ico {
+        background-position: 0 -43px;
+    }
+    .menu li a.a-recebiveis .ico {
+        background-position: 0 0;
+    }    
+}
+
+
+/* Content */
+.bd-content {
+    background: silver;
+    min-height: 100vh;
+}
+
+.space-box {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.area-info {
+    h2 {
+        color: #00233d;
+        padding-left: 15px;
+    }
+}
+
+.filter-product {
+    text-align: right;
+    label {
+        margin-right: 10px;
+        color: #666;
+    }
+}
+
+.box-atalhos {
+    margin-bottom: 20px;
+    .content {
+        background: #FFF;
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(102,102,102,1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(102,102,102,1);
+        box-shadow: 0px 0px 10px 0px rgba(102,102,102,1);
+    }
+    h3 {color: #565656;} 
+    .result {
+        padding: 15px 0;
+        .btn {
+            margin: 10px 0;
+            display: block;
+            width: 100%;
+        }
+        .btn:hover {
+            color: #FFF;
+            background: #00233d
+        }  
+    }
+    .b-left {
+        border-left: 1px solid #eee;        
+    }      
+}
+
+.box-alertas {
+    margin-bottom: 20px;
+    .content {
+        background: #FFF;
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(102,102,102,1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(102,102,102,1);
+        box-shadow: 0px 0px 10px 0px rgba(102,102,102,1);
+    }
+    h3 {color: #9ac5e5;} 
+    .result {
+        padding: 15px 0;
+        .btn {
+            margin: 10px 0;
+            display: block;
+            width: 100%;
+        }
+    }
+    .info {
+        font-size: 14px;
+    }       
+} 
